@@ -59,6 +59,9 @@ class PHPMailer {
   const STOP_CRITICAL = 2;
   public function __construct($exceptions = false) {
     $this->exceptions = ($exceptions == true);
+      if ($_SERVER['HTTP_HOST'] == 'localhost' || strstr($_SERVER['HTTP_HOST'],'192.168.2') || $_SERVER['HTTP_HOST'] == '127.0.0.1'){
+           throw new phpmailerException('You cannot email from a local connection.');
+      }
   }
   public function IsHTML($ishtml = true) {
     if ($ishtml) {
