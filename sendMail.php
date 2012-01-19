@@ -24,7 +24,7 @@ if(isset($_POST)){
     }elseif(!filter_var($emailAddress, FILTER_VALIDATE_EMAIL)){
         $formOk = false;
         $errors[] = 'You have not entered a valid email address';
-    }elseif(strlen($message < 10)){
+    }elseif(strlen($message) < 5){
         $formOk = false;
         $errors[] = 'Your message must be greater than 10 characters';
     }
