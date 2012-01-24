@@ -38,15 +38,7 @@ require_once('includes/scripts.inc.php');
 ?>
 <script defer src="js/plugins.js"></script>
 <script defer src="js/script.js"></script>
-
-<script> // Change UA-XXXXX-X to be your site's ID
-//  window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
-//  Modernizr.load({
-//    load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
-//  });
-</script>
-
-
+    <?php include_once 'includes/analytics.inc.php'; ?>
     <!--[if lt IE 8 ]>
       <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
       <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
