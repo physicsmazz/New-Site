@@ -15,7 +15,7 @@ require_once 'includes/html.inc.php';
     <script src="js/libs/modernizr-2.0.6.min.js"></script>
 
 </head>
-<body>
+<body id="home">
 <div id="noJs">
     You must have JavaScript installed.
 </div>
