@@ -12,7 +12,7 @@ require_once 'includes/html.inc.php';
     <link rel="shortcut icon" href="favicon.ico">
 <!--    <link rel="apple-touch-icon" href="apple-touch-icon.png">-->
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/libs/modernizr-2.0.6.min.js"></script>
+    <script src="js/libs/modernizr.min.js"></script>
 
 </head>
 <body id="home">
