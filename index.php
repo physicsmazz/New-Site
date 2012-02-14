@@ -8,7 +8,7 @@ require_once 'includes/html.inc.php';
     <title>New Website - By Mazz</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="favicon.ico">
 <!--    <link rel="apple-touch-icon" href="apple-touch-icon.png">-->
     <link rel="stylesheet" href="css/style.css">
@@ -16,6 +16,12 @@ require_once 'includes/html.inc.php';
 
 </head>
 <body id="home">
+<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+     chromium.org/developers/how-tos/chrome-frame-getting-started -->
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+
+
 <div id="noJs">
     You must have JavaScript installed.
 </div>
@@ -31,13 +37,9 @@ $admin = false;
 $ui = false;
 require_once('includes/scripts.inc.php');
 ?>
-<script defer src="js/plugins.js"></script>
-<script defer src="js/script.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/script.js"></script>
     <?php include_once 'includes/analytics.inc.php'; ?>
-    <!--[if lt IE 8 ]>
-      <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-      <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-    <![endif]-->
 
 </body>
 </html>
